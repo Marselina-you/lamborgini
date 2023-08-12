@@ -8,23 +8,70 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>MaxGraph New Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/vendor.css">
   <link rel="stylesheet" href="css/main.css">
   <script defer src="js/main.js"></script>
 </head>
 
-<body class="page__body">
+<body class="body">
   <div class="site-container">
     <header class="header">
-  <div class="container"></div>
+  <div class="container">
+    <nav class="nav">
+      <ul class="menu-list menu-left list-reset">
+        <li class="menu-item">
+          <a href="#" class="menu-link">О гонке</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Трек</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Lamborghini Super trofeo</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Новости</a>
+        </li>
+      </ul>
+      <a href="#" class="logo">
+        <img src="img/logo.svg" alt="logo" class="logo-img">
+      </a>
+      <ul class="menu-list menu-right list-reset">
+        <li class="menu-item">
+          <a href="#" class="menu-link">Купить билеты</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Смотреть онлайн</a>
+        </li>
+        <li class="menu-item">
+          <a href="#" class="menu-link">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
     <main class="main">
-      <picture>
-        <source srcset="img/cover.webp" type="image/webp">
-        <img loading="lazy" src="img/cover.jpg" class="image" width="300" height="300" alt="Обложка канала MaxGraph">
-      </picture>
+      <section class="promo">
+  <div class="container">
+    <div class="promo__inner">
+      <h1 class="title">LAMBORGHINI SUPER TROFEO</h1>
+      <h2 class="subtitle">Гранд-финал 2022
+        <span>3-6 ноября</span>
+        <p class="promo__text">
+          автодром Портимао, Португалия
+        </p>
+      </h2>
+      <a href="#" class="promo__arrow">
+        <img src="img/arrow.svg" alt="arrow">
+      </a>
+    </div>
+  </div>
+</section>
+
     </main>
     <footer class="footer">
   <div class="container"></div>
