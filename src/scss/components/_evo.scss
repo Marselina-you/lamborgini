@@ -2,6 +2,10 @@
   margin-bottom: 100px;
   font-size: 14px;
 
+  @include small-tablet {
+    margin-bottom: 50px;
+  }
+
   &__descr-list {
     display: flex;
     justify-content: center;
@@ -10,6 +14,14 @@
     dd {
       text-transform: uppercase;
 
+    }
+    @include s-tablet {
+      display: block;
+      text-align: center;
+
+      div {
+        margin-bottom: 15px;
+      }
     }
 
   }
@@ -40,12 +52,22 @@
       height: 572px;
       left: -40px;
       top: 290px;
+
+      @include s-tablet {
+        display: none;
+      }
+
+
     }
 
   }
   &__info {
     display: flex;
     justify-content: space-between;
+
+    @include s-tablet {
+      display: block;
+    }
   }
   &__infobox {
     flex-basis: 437px;
@@ -55,6 +77,10 @@
     font-size: 32px;
     font-weight: 300;
     padding-right: 50px;
+
+    @include s-tablet {
+     margin-bottom: 20px;
+    }
 
   }
   &__text {
@@ -67,6 +93,10 @@
     z-index: 1;
     display: block;
     margin: 170px auto 60px;
+
+    @include small-tablet {
+      margin-top: 130px;
+    }
   }
 }
 .evo-white {
@@ -74,6 +104,10 @@
   &__inner {
     position: relative;
     padding-top: 125px;
+
+    @include small-tablet {
+      padding-top: 75px;
+    }
 
     &::before {
       content: '';
@@ -83,6 +117,10 @@
       height: 257px;
       left: 360px;
       top: -40px;
+
+      @include s-tablet {
+        display: none;
+      }
     }
     &::after {
       content: '';
@@ -92,6 +130,10 @@
       height: 311px;
       left: 600px;
       top: 115px;
+
+      @include d-tablet {
+        display: none;
+      }
     }
 
   }
@@ -128,6 +170,10 @@
         display: block;
         color: #fff;
       }
+    }
+
+    @include small-tablet {
+      margin-top: 50px;
     }
   }
 

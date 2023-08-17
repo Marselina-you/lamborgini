@@ -1,8 +1,20 @@
 .footer {
   margin-top: 100px;
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   background-color: #363636;
   color: #fff;
+
+  @include small-tablet {
+    padding: 50px 0;
+  }
+
+  &__logo {
+
+    @include mobile {
+      display: block;
+      padding: 20px 0;
+    }
+  }
 
   &__title {
     margin-bottom: 50px;
@@ -16,6 +28,10 @@
     justify-content: space-between;
     gap: 0 20px;
 
+    @include s-tablet {
+      display: block;
+    }
+
   }
   &__address {
     flex-basis: 462px;
@@ -24,9 +40,7 @@
     margin-bottom: 20px;
     font-size: 16px;
   }
-  &__info {
 
-  }
   &__info-item {
     margin-bottom: 50px;
 
@@ -46,6 +60,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @include mobile {
+      display: block;
+      text-align: center;
+
+    }
   }
 }
 .social-list {

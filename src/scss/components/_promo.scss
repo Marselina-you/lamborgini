@@ -4,6 +4,11 @@
   background-size: cover;
   background-position: center;
 
+  @include small-desk {
+    background-position: left center;
+
+  }
+
 }
 .promo__inner {
   padding-top: 100px;
@@ -20,6 +25,16 @@
   text-transform: uppercase;
   letter-spacing: 0.08em;
   font-size: 76px;
+
+  @include small-desk {
+    font-size: 64px;
+  }
+  @include mobile {
+    font-size: 48px;
+  }
+  @include m-mobile {
+    font-size: 42px;
+  }
 }
 .subtitle {
   margin: 0;
@@ -30,12 +45,30 @@
   font-size: 48px;
   border-bottom: 1px solid #040404;
 
+  @include small-desk {
+    font-size: 42px;
+  }
+  @include mobile {
+    font-size: 34px;
+  }
+  @include m-mobile {
+    font-size: 30px;
+  }
+
   span {
     margin: 0;
     display: block;
     padding: 10px 0;
     color: #9F6B08;
     font-size: 34px;
+
+    @include small-desk {
+      font-size: 32px;
+    }
+    @include mobile {
+      font-size: 26px;
+    }
+
   }
 }
 
